@@ -5,6 +5,6 @@ let user = {
 
 let {name, years: age, isAdmin = false} = user;
 
-console.log( name ); // John
-console.log( age ); // 30
-console.log( isAdmin ); // false
+console.log( name );
+console.log( age );
+console.log( isAdmin );
