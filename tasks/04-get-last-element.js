@@ -7,19 +7,8 @@ Passing the parameter 'n' will return the last 'n' elements of the array.
  */
 
 function last(arr, n){
-    let arr2 = []
-    if(n >= arr.length){
-        return arr;
-    }
-    else if (n < arr.length){
-        for(let i = n; i > 0; i--){
-            arr2.push(arr[i]);
-        }
-    }
-    else{
-        for(let i = arr.length; i > 0; i--){
-            arr2.push(arr[i]);
-        }
+    if(n > 0){
+        return arr.slice(-n);
     }
     return arr[arr.length - 1];
 }
