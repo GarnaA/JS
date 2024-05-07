@@ -7,20 +7,12 @@ of an array. Passing the parameter 'n' will return the first 'n' elements of the
 */
 
 function first(arr, n){
-    let arr2 = []
-    if(n > 0 && n <= arr.length){
-        for(let i = 0; i < n; i ++){
-            arr2.push(arr[i]);
-        }
-        return arr2;
-    }
-    else if(n > 0 && n > arr.length){
-        return arr;
+    if(n > 0){
+        return arr.slice(0, n);
     }
     else if(n < 0){
-        return [];
+      return [];
     }
-
     return arr[0];
 }
 
