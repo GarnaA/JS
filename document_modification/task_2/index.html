@@ -1,0 +1,12 @@
+<div id="elem1"></div>
+<div id="elem2"></div>
+<div id="elem3"></div>
+<script>
+  let text = '<b>текст</b>';
+
+  elem1.append(document.createTextNode(text));
+  elem2.innerHTML = text;
+  elem3.textContent = text;
+
+  //1st and 3rd commands are working in the same way
+</script>
