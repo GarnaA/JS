@@ -1,0 +1,24 @@
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 20px;
+  display: none;
+}
+
+.menu .list{
+  font-size: 18px;
+  cursor: pointer;
+  }
+.menu .list::before {
+  content: '▶ ';
+  font-size: 80%;
+  color: green;
+}
+
+.menu.open .list::before {
+  content: '▼ ';
+}
+  
+.menu.open ul {
+  display: block;
+}
